@@ -12,7 +12,7 @@ This is a Python-based Sudoku solver that utilizes the BACKTRACKING ALGORITHM to
 
 ## How It Works
 1. Find an Empty Cell: The program scans the grid for the first available empty space (denoted by `0`).
-2. **Check Validity:** It tries numbers `1-9` in that position and checks whether they satisfy Sudoku rules:
+2. Check Validity: It tries numbers `1-9` in that position and checks whether they satisfy Sudoku rules:
    - The number must not exist in the same row.
    - The number must not exist in the same column.
    - The number must not exist in the 3x3 sub-grid.
@@ -20,9 +20,9 @@ This is a Python-based Sudoku solver that utilizes the BACKTRACKING ALGORITHM to
 4. Solution Found: Once all empty cells are filled correctly, the solved Sudoku grid is displayed.
 
 ## Code Structure
-- find_empty_location(grid)`: Finds the next empty position (cell containing `0`).
-- is_valid_placement(grid, row, col, num)`: Checks if placing `num` at `(row, col)` is valid.
-- solve_sudoku(grid)`: Main function that implements **backtracking** to solve the Sudoku puzzle.
+- find_empty_location(grid): Finds the next empty position (cell containing `0`).
+- is_valid_placement(grid, row, col, num): Checks if placing num at (row, col) is valid.
+- solve_sudoku(grid): Main function that implements BACKTRACKING to solve the Sudoku puzzle.
 
 ## Usage
 1. Install Python (if not installed).
